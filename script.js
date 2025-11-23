@@ -1,3 +1,3 @@
 console.log("Website loaded successfully!");
 
-alert("Welcome to my example website!");
+alert("Welcome to BrainBoostLab!");
