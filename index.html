@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGVC BrainBoostLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <h2 class="logo">TGVC <span>BrainBoostLab</span></h2>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="navMenu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" id="aboutLink">About</a></li>
+                <li><a href="#" id="contactLink">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-slider" id="heroSlider">
+        <div class="slide active" style="background: linear-gradient(135deg, #4674e9 0%, #2f54c4 100%);">
+            <div class="hero-inner">
+                <span class="hero-badge">TGVC Technologies LLP</span>
+                <h1>Welcome to BrainBoostLab</h1>
+                <p>A structured learning and challenge platform where users can build knowledge, strengthen skills, and improve step-by-step through hands-on practice and curated learning resources.</p>
+                <a href="#explore" class="btn-primary">Explore Courses</a>
+            </div>
+        </div>
+        <div class="slide" style="background: linear-gradient(135deg, #ff7a59 0%, #d8482f 100%);">
+            <div class="hero-inner">
+                <span class="hero-badge">New Batch Open</span>
+                <h1>Master Full Stack Development</h1>
+                <p>Java, Spring Boot, Angular and PostgreSQL — go from fundamentals to production-ready projects with hands-on mentorship.</p>
+                <a href="#explore" class="btn-primary">View Curriculum</a>
+            </div>
+        </div>
+        <div class="slide" style="background: linear-gradient(135deg, #1f9d7c 0%, #136b54 100%);">
+            <div class="hero-inner">
+                <span class="hero-badge">Limited Seats</span>
+                <h1>Cloud &amp; DevOps Mastery</h1>
+                <p>Docker, Kubernetes, AWS and CI/CD pipelines taught with real deployment scenarios used by enterprise teams.</p>
+                <a href="#explore" class="btn-primary">Enroll Now</a>
+            </div>
+        </div>
+        <div class="slide" style="background: linear-gradient(135deg, #7b4ee9 0%, #4d2fb0 100%);">
+            <div class="hero-inner">
+                <span class="hero-badge">Beginner Friendly</span>
+                <h1>Start Your Coding Journey</h1>
+                <p>Learn Python, JavaScript and core programming concepts with guided practice and curated resources for every skill level.</p>
+                <a href="#explore" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+
+        <button class="slide-arrow prev" id="prevSlide" aria-label="Previous slide">&#10094;</button>
+        <button class="slide-arrow next" id="nextSlide" aria-label="Next slide">&#10095;</button>
+
+        <div class="slide-dots" id="slideDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+        </div>
+    </header>
+
+    <section class="courses" id="explore">
+        <div class="section-heading">
+            <h2>Explore Technologies</h2>
+            <p>Hands-on courses across the modern full-stack ecosystem</p>
+        </div>
+        <div class="course-scroller">
+            <div class="course-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java">
+                <h3>Java</h3>
+                <p class="price">₹999</p>
+                <p class="duration">6 Weeks</p>
+            </div>
+            <div class="course-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/08/Spring_Framework_Logo_2018.svg" alt="Spring Boot">
+                <h3>Spring Boot</h3>
+                <p class="price">₹1499</p>
+                <p class="duration">8 Weeks</p>
+            </div>
+            <div class="course-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular">
+                <h3>Angular</h3>
+                <p class="price">₹1299</p>
+                <p class="duration">7 Weeks</p>
+            </div>
+            <div class="course-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+                <h3>React</h3>
+                <p class="price">₹1199</p>
+                <p class="duration">6 Weeks</p>
+            </div>
+            <div class="course-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Python-logo-notext.svg" alt="Python">
+                <h3>Python</h3>
+                <p class="price">₹899</p>
+                <p class="duration">5 Weeks</p>
+            </div>
+            <div class="course-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker">
+                <h3>Docker</h3>
+                <p class="price">₹799</p>
+                <p class="duration">4 Weeks</p>
+            </div>
+            <div class="course-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Postgresql_elephant.svg" alt="PostgreSQL">
+                <h3>PostgreSQL</h3>
+                <p class="price">₹699</p>
+                <p class="duration">3 Weeks</p>
+            </div>
+            <div class="course-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Mongo-db-logo.png" alt="MongoDB">
+                <h3>MongoDB</h3>
+                <p class="price">₹799</p>
+                <p class="duration">4 Weeks</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="developers" id="developers">
+        <div class="section-heading">
+            <h2>Developers</h2>
+            <p>The team behind this platform</p>
+        </div>
+        <div class="developer-card">
+            <div class="developer-avatar">OT</div>
+            <h3>Obulareddy Thavva</h3>
+            <p class="role">Senior Software Engineer</p>
+            <p class="dev-detail">📞 6302938955</p>
+            <p class="dev-detail">✉️ obulareddyjd@gmail.com</p>
+            <p class="dev-detail">📍 Chennai</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 TGVC Technologies LLP. All rights reserved.</p>
+    </footer>
+
+    <div class="modal-overlay" id="aboutModal">
+        <div class="modal-box">
+            <span class="modal-close" id="aboutClose">&times;</span>
+            <h2>About TGVC Technologies</h2>
+            <p>TGVC Technologies, based in Hyderabad, Telangana, India, is a dynamic and future-ready technology company established on 4th September 2024. With a mission to build intelligent, scalable, and cross-domain digital solutions, TGVC Technologies is driven by innovation, agility, and a commitment to customer success.</p>
+            <p>We are proud to be a Startup India recognized entity. Registered as a Micro, Small &amp; Medium Enterprise (MSME).</p>
+            <p>We're not just another tech company. We're the team that turns coffee into code, ideas into impact, and problems into elegant digital solutions. Born from a passion for innovation and a drive to solve real-world challenges, our mission is simple: build smart, human-centered technology that works beautifully.</p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-box">
+            <span class="modal-close" id="contactClose">&times;</span>
+            <h2>Contact Details</h2>
+            <p class="company">TGVC Technologies LLP</p>
+            <p>HR Team</p>
+            <p>Contact Details: 9096781543 / 6302938955</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
